@@ -11,6 +11,8 @@ const bodyParser= require('body-parser')
 //to get router from index.
 const indexRouter = require('./routes/index');
 const authorRouter = require('./routes/authors');
+const bookRouter = require('./routes/books');
+
 
 app.set('view engine','ejs');
 app.use(expressLayouts);
@@ -30,6 +32,7 @@ db.once('open',() => console.log('Connected to Mongoose'))
 app.use('/', indexRouter);
 app.use('/authors', authorRouter);
 'authors/new'
+app.use('/books', bookRouter);
 
 
 
