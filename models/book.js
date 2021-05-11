@@ -11,12 +11,12 @@ const bookSchema= new mongoose.Schema({
         type: String,
 
     },
-    publishDAte:{
+    publishDate:{
         type: Date,
         required: true
 
     },
-    padeCount:{
+    pageCount:{
         type: Number,
         required:true
 
@@ -41,4 +41,5 @@ const bookSchema= new mongoose.Schema({
 
 })
 module.exports =mongoose.model('Book',bookSchema)
+
 module.exports.coverImageBasePath =coverImageBasePath
