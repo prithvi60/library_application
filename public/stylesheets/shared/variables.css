@@ -23,4 +23,10 @@
 --color-btn-danger-text-dark:black;
 --color-btn-danger-background: hsl(var(--color-danger-hue),100%,83%);
 --color-btn-danger-background-dark: hsl(var(--color-danger-hue),100%,73%);
+
+--form-label-font-size:1.2rem;
+--form-input-background-color:hsl(var(--color-base-hue),100%,31%);
+--form-input-border-color:hsl(var(--color-base-hue),100%,50%);
+--form-input-border-color-light:hsl(var(--color-base-hue),100%,80%);
+
 }
