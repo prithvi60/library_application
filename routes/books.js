@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Book = require('../models/book')
 const Author = require('../models/author')
-const imageMimeTypes = ['image/jpeg', 'image/png', 'images/gif']
+const imageMimeTypes = ['image/jpeg', 'image/png', 'image/gif']
 
 // All Books Route
 router.get('/', async (req, res) => {
@@ -49,7 +49,7 @@ router.post('/', async (req, res) => {
     const newBook = await book.save()
     res.redirect(`/books/${newBook.id}`)
   } catch(err){
-    console.log(err)  
+    // console.log(err)  
     renderNewPage(res, book, true)
   }
 })
@@ -143,19 +143,24 @@ async function renderFormPage(res, book,form, hasError = false) {
       }
     } 
     res.render(`books/${form}`, params)
-  } catch{
+  } catch(err){
+    // console.log(err)
     res.redirect('/books')
   }
 }
 
 function saveCover(book, coverEncoded){
-  if(coverEncoded == null || coverEncoded.length < 1) return
-const cover= JSON.parse(coverEncoded)
-  if(cover!= null && imageMimeTypes.includes(cover.type)){
+  try{
+  if(coverEncoded == null) return
+   const cover= JSON.parse(coverEncoded)
+  if(cover!= null && imageMimeTypes.includes(cover.type)) {
     book.coverImage = new Buffer.from(cover.data,'base64')
     book.coverImageType = cover.type
   }
-
+  }
+  catch {
+  
+  }
 }
 
 module.exports = router
