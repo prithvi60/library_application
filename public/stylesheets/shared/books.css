@@ -4,7 +4,11 @@
 }
 
 .book-cover-large{
-    --book-cover-width: var(var(--book-cover-width-large));
+    --book-cover-width: var(--book-cover-width-large);
+}
+.book-cover-large:hover {
+  opacity: 90%;
+  transform: rotateX(5deg);
 }
 
 .book-grid{
