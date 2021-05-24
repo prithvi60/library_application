@@ -39,7 +39,7 @@ body{
     color: hsl(var(--color-danger-hue), 100%, 85%)
 }
 
-@media only screen and (max-width: 585px) {
+@media only screen and (max-width: 600px) {
     /* For mobile phones: */
     .body,.form-row{
       width: 100%;
