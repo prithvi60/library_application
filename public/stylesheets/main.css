@@ -62,4 +62,7 @@ body{
         font-size: var(--nav-title-mobfont-size);
         flex-shrink: 1rem;
     }
+    .book-cover-large{
+        --book-cover-width: var(--book-cover-mobwidth-large);
+    }
   }
