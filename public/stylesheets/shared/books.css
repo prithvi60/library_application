@@ -16,6 +16,7 @@
     justify-content: center;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fill,var(--book-cover-width));
+    grid-auto-flow: row;
 }
 
 .book-grid-large{
@@ -24,6 +25,7 @@
 
 .book-details{
     display: flex ;
+    flex-flow: wrap;
 }
 .book-details-grid {
     display: grid;
@@ -31,6 +33,7 @@
     align-items: center;
     grid-gap: 1rem;
     grid-template-columns: auto auto;
+  
   }
   
 .book-details-btn-grid {

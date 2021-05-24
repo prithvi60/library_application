@@ -56,7 +56,7 @@ body{
         margin-left: 0rem;
     }
     .btn-row > *{
-        margin-left: 0rem;
+        margin-left: 0.2rem;
     }
     .inner-container{
         font-size: var(--nav-title-mobfont-size);

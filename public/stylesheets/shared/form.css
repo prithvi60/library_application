@@ -2,7 +2,6 @@
 display: flex;
 margin-bottom: .5rem;
 flex-flow: wrap;
-align-content: center;
 }
 
 .form-item{
