@@ -39,7 +39,7 @@ body{
     color: hsl(var(--color-danger-hue), 100%, 85%)
 }
 
-@media only screen and (max-width: 600px ) {
+@media only screen and (max-width: 530px ) {
     /* For mobile phones: */
     .header-nav{
         margin-bottom: 0rem;
