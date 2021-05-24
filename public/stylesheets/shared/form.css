@@ -1,6 +1,8 @@
 .form-row{
 display: flex;
 margin-bottom: .5rem;
+flex-flow: wrap;
+align-content: center;
 }
 
 .form-item{
@@ -35,6 +37,7 @@ margin-bottom: .5rem;
     font-weight: normal;
     font-family: 'Gotham Rounded';
     outline: none;
+    flex-wrap: wrap;
 }
 .form-item textarea{
     height: 100%;

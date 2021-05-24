@@ -10,6 +10,7 @@
 --color-text-light: hsl(var(--color-base-hue),100%,87%);
 
 --nav-title-font-size: 3rem;
+--nav-title-mobfont-size: 2rem;
 --nav-title-font-weight: bold;
 --nav-link-font-weight: 300;
 

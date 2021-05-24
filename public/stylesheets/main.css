@@ -39,9 +39,27 @@ body{
     color: hsl(var(--color-danger-hue), 100%, 85%)
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px ) {
     /* For mobile phones: */
-    .body,.form-row{
-      width: 100%;
+    .header-nav{
+        margin-bottom: 0rem;
+    }
+    .header-title{
+    
+        font-size: var(--nav-title-mobfont-size);
+        font-weight: var(--nav-title-font-weight);
+    }
+    .header-nav li a{
+        padding: 0.5rem;
+    }
+    .form-item{ 
+        margin-left: 0rem;
+    }
+    .btn-row > *{
+        margin-left: 0rem;
+    }
+    .inner-container{
+        font-size: var(--nav-title-mobfont-size);
+        flex-shrink: 1rem;
     }
   }

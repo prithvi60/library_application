@@ -11,7 +11,7 @@
 .btn-row{
     display: flex;
     align-items: flex-start;
-
+    flex-flow: wrap;
 }
 
 .btn-row > *{
